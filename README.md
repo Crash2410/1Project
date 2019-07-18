@@ -1,6 +1,6 @@
    Меня зовут Артём, я недавно начала изучать Web разработку. 
    
-   Это мой первый проект на HTML и CSS. Шаблон сайта взят из интернета, а именно от сюда - https://camouf.ru/designes/ready-psd-layouts-  for-saito/1942.html
+   Это мой первый проект на HTML и CSS. Шаблон сайта взят из интернета, а именно от сюда - https://camouf.ru/designes/ready-psd-layouts-for-saito/1942.html
    
    Данный сайт адаптирован под мобильные устройства при помощи CSS GRID. 
    
