@@ -1,0 +1,1162 @@
+
+* {
+  /* Делает падинги отступами внутрь родительского элемента */
+  box-sizing: border-box;
+  }
+body {
+  background-color: #f0f2f4;
+  margin: 0;
+  padding: 0;
+}
+/*.grid {
+  display: grid;
+  grid-template: 50px 130px 550px 542px 1407px 860px 250px 490px 68px / repeat(12, 1fr);
+  grid-template-areas: "Logo" "header" "MENU" "Logo"  "banner" "analysis" "footer";
+  grid-gap: 20px; 
+}*/
+
+
+/* Вверхняя информация */
+.header {
+  display: grid;
+  grid-template: 50px / repeat(8, 1fr);
+  grid-template-areas: "infomation";
+  grid-gap: 20px;
+}
+.infomation {
+  grid-area: 1/ 2/ 2 / 8;
+}
+.mail,
+.number {
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 15px;
+  color: #333333;
+}
+.header p {
+  float: right;
+  line-height: 25px;
+}
+
+.facebook {
+  position: relative;
+  bottom: 2px;
+}
+.mail {
+  margin-right: 10px;
+  position: relative;
+  bottom: 2px;
+}
+.phone,
+.sms {
+  margin-right: 5px;
+}
+.number {
+  margin-right: 40px;
+  position: relative;
+  bottom: 1px;
+}
+.phone {
+  position: relative;
+  top: 1px;
+}
+
+/* Меню и Лого*/
+.navig {
+  display: grid;
+  grid-template: 130px / repeat(8, 1fr);
+  grid-template-areas: "Logo" "MENU" "Button1";
+  grid-gap: 20px;
+  background-color: #ffffff;
+  height: 130px;
+}
+
+.Logo {
+  grid-area: 1 / 2/ 2 / 4;
+  z-index: 2;
+  align-self: center;
+}
+.MENU {
+  grid-area: 1 / 4/ 2/ 7;
+  align-self: center;
+  justify-self: end;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 15px;
+}
+.menu li {
+  display: inline-block;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: #333333;
+}
+.menu li :hover {
+  color: red;
+}
+
+.alips {
+  position: relative;
+  bottom: 2px;
+}
+.Button1 {
+  grid-area: 1 / 7 / 2 /8;
+  justify-self: end;
+  align-self: center;
+  text-align: center;
+}
+.consult {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 171px;
+  height: 35px;
+}
+
+.consult a {
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  top: 7px;
+}
+.consult :hover {
+  box-shadow: 1px 1px 10px #e51616;
+}
+
+/* Баннер */
+
+.banner {
+  display: grid;
+  grid-template: 160px 102px 114px 152px / repeat(8, 1fr);
+  grid-template-areas: "back-img" "information2" "Button2";
+  grid-gap: 20px;
+}
+.back-img {
+  grid-area: 1/ 1/ 5 / 9;
+}
+.back-img img {
+  height: 590px;
+  width: 100%;
+}
+.information2 {
+  justify-self: center;
+  text-align: center;
+  grid-area: 2/ 3/ 3/ 7;
+  align-self: center;
+}
+.zagolov {
+  font-family: Helvetica;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.social {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #ffffff;
+  position: relative;
+  bottom: 45px;
+}
+.Button2 {
+  grid-area: 3/ 4/ 4/ 6;
+  justify-self: center;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 24px;
+}
+.consult-free {
+  background-color: #e9b449;
+  width: 330px;
+  height: 69px;
+  border: 1px solid #e9ac31;
+  border-radius: 7px;
+}
+
+.consult-free a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  top: 20px;
+}
+.consult-free:hover {
+  box-shadow: 1px 1px 10px #ecb952;
+}
+/* Наши сервисы */
+.services {
+  display: grid;
+  grid-template: 83px 113px 256px 93px / repeat(8, 1fr);
+  grid-template-areas: "information3" "facebookM" "pages" "ADS";
+  grid-gap: 20px;
+  background-color: #ffffff;
+  width: 100%;
+}
+.information3 {
+  text-align: center;
+  grid-area: 2/ 4 / 3 / 6;
+  align-self: center;
+  justify-self: center;
+}
+.line1 {
+  width: 50px;
+  height: 5px;
+  border: none;
+  color: #333;
+  background-color: #333;
+  position: relative;
+  bottom: 25px;
+}
+.about {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 36px;
+  color: #333333;
+}
+.add {
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #333333;
+  position: relative;
+  bottom: 25px;
+}
+
+/* Лайк фейсбука*/
+.facebookM {
+  grid-area: 3 / 2 / 4 / 4;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.marketing {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 22px;
+}
+.opisan {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13, 5px;
+}
+/*-----------Создание лендингов--------*/
+.pages {
+  grid-area: 3 / 4 / 4 / 6;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.landing {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 22px;
+  position: relative;
+  bottom: 1px;
+}
+.opisan2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13, 5px;
+  position: relative;
+  text-align: center;
+}
+/*----------Менеджмент-----------*/
+.ads {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 22px;
+}
+.opisan3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13, 5px;
+  position: relative;
+}
+.ADS {
+  grid-area: 3 / 6 / 4 / 8;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+/*-------Наш подход-------*/
+.approach {
+  display: grid;
+  grid-template: 78px 104px 288px 274px 279px 277px 112px / repeat(8, 1fr);
+  grid-template-areas: "information4" "step1" "step2" "step3" "step4";
+  grid-gap: 20px;
+  background-color: #f0f2f4;
+}
+.information4 {
+  grid-area: 2/ 3 / 3 / 7;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.our-approach {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 36px;
+}
+.check {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 25px;
+}
+.line2 {
+  width: 50px;
+  height: 5px;
+  border: none;
+  color: #333;
+  background-color: #333;
+  position: relative;
+  bottom: 25px;
+}
+/*---------------STEP1(Блок и картинка)---------------*/
+.step1 {
+  grid-area: 3/ 2 / 3 / 8;
+  align-self: center;
+  justify-self: center;
+  background-color: #ffffff;
+  width: 1032px;
+  height: 240px;
+  box-shadow: 5px 5px 15px #cccccc;
+}
+.photos {
+  height: 240px;
+  position: relative;
+}
+/*----------------STEP1 (КРАСНАЯ)-----------------*/
+.steps {
+  color: #ffffff;
+  background-color: #e51616;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  position: relative;
+  left: 298px;
+  bottom: 295px;
+}
+.steps p {
+  font-family: Georgia;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 5px;
+  bottom: 62px;
+}
+.steps span {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  bottom: 42px;
+  right: 5px;
+}
+/*--------------STEP1(Текст в блоке)---------------*/
+.Here {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  position: relative;
+  left: 438px;
+  bottom: 180px;
+}
+.Lorem {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #797979;
+  position: relative;
+  left: 438px;
+  bottom: 185px;
+}
+/*------------STEP2(Блок и картинка)--------------*/
+.step2 {
+  grid-area: 4/ 2 / 5 / 8;
+  align-self: center;
+  justify-self: center;
+  background-color: #ffffff;
+  width: 1032px;
+  height: 240px;
+  box-shadow: 5px 5px 15px #cccccc;
+}
+.road {
+  height: 240px;
+  width: 350px;
+  position: relative;
+  left: 682px;
+}
+/*----------STEP2(Текст в блоке)------------*/
+.Here2 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #333333;
+  position: relative;
+  right: 438px;
+  bottom: 190px;
+}
+.Lorem2 {
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  color: #797979;
+  position: relative;
+  right: 438px;
+  bottom: 195px;
+}
+/*----------STEP2(Красная)-------------*/
+.steps2 {
+  color: #ffffff;
+  background-color: #e51616;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  position: relative;
+  left: 630px;
+  bottom: 300px;
+}
+/*---------------STEP3(Блок и картинка)-------------*/
+.step3 {
+  grid-area: 5/ 2 / 6 / 8;
+  align-self: center;
+  justify-self: center;
+  background-color: #ffffff;
+  width: 1032px;
+  height: 240px;
+  box-shadow: 5px 5px 15px #cccccc;
+}
+.workzone {
+  height: 240px;
+  width: 350px;
+}
+/*-------------STEP3(Текст в блоке)------------*/
+.Here3 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  position: relative;
+  left: 438px;
+  bottom: 185px;
+}
+.Lorem3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #797979;
+  position: relative;
+  left: 438px;
+  bottom: 190px;
+}
+/*---------------STEP3(Красная)---------------*/
+.steps3 {
+  color: #ffffff;
+  background-color: #e51616;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  position: relative;
+  bottom: 300px;
+}
+.step3 span {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  bottom: 37px;
+  right: 8px;
+}
+/*----------------STEP4-(Блок и картинка)--------------------*/
+.step4 {
+  grid-area: 6/ 2 / 7 / 8;
+  align-self: center;
+  justify-self: center;
+  background-color: #ffffff;
+  width: 1032px;
+  height: 240px;
+  box-shadow: 5px 5px 15px #cccccc;
+}
+.works {
+  height: 240px;
+  width: 350px;
+  position: relative;
+  left: 682px;
+}
+/*-------------STEP4-(Текст в блоке)------------*/
+.Here4 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #333333;
+  position: relative;
+  right: 438px;
+  bottom: 190px;
+}
+.Lorem4 {
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  color: #797979;
+  position: relative;
+  right: 438px;
+  bottom: 195px;
+}
+/*---------------STEP3-(Красная)---------------*/
+.steps4 {
+  color: #ffffff;
+  background-color: #e51616;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  position: relative;
+  left: 630px;
+  bottom: 300px;
+}
+/*----------Наши работы--------------*/
+.Our-Works {
+  display: grid;
+  grid-template: 93px 107px 567px 104px / repeat(8, 1fr);
+  grid-template-areas: "information5" "Works";
+  grid-gap: 20px;
+  background-color: #e51616;
+}
+.information5 {
+  grid-area: 2/ 4 / 3 / 6;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.ourWorks {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 36px;
+  color: #ffffff;
+}
+.below {
+  font-family: Helvetica;
+  font-size: 15px;
+  color: #ffffff;
+  position: relative;
+  bottom: 30px;
+}
+.line3 {
+  width: 50px;
+  height: 5px;
+  border: none;
+  color: #ffffff;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 30px;
+}
+.Works {
+  grid-area: 3/ 2 / 4 / 8;
+  align-self: center;
+  justify-self: center;
+  height: 506px;
+  width: 1024px;
+}
+/*----------Область 1------------*/
+.obl1 {
+  width: 255px;
+  height: 253px;
+}
+.Pname1 {
+  color: #ffffff;
+  position: relative;
+  right: 100px;
+  z-index: 2;
+  position: relative;
+  bottom: 145px;
+  left: 43px;
+}
+.Name1 {
+  font-family: Helvetica;
+  font-size: 26px;
+  font-weight: bold;
+}
+.Fmark1 {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  left: 6px;
+}
+/*----------Область 2------------*/
+.obl2 .bord {
+  width: 255px;
+  height: 253px;
+}
+/*----------Область 3------------*/
+.obl3 {
+  position: relative;
+  left: 255px;
+  bottom: 510px;
+}
+.photos2 {
+  width: 255px;
+  height: 253px;
+}
+/*----------Область 4------------*/
+.obl4 {
+  width: 255px;
+  height: 253px;
+  position: relative;
+  left: 255px;
+  bottom: 530px;
+}
+.Pname1 {
+  color: #ffffff;
+  position: relative;
+  right: 100px;
+  z-index: 2;
+  position: relative;
+  bottom: 145px;
+  left: 43px;
+}
+.Pname1 .Fmark2 {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  left: 35px;
+}
+/*----------Область 5------------*/
+.obl5 {
+  width: 255px;
+  height: 253px;
+  position: relative;
+  bottom: 1052px;
+  left: 510px;
+}
+.Pname1 {
+  color: #ffffff;
+  position: relative;
+  right: 100px;
+  z-index: 2;
+  position: relative;
+  bottom: 145px;
+  left: 43px;
+}
+/*----------Область 6------------*/
+.obl6 {
+  position: relative;
+  bottom: 1052px;
+  left: 510px;
+}
+.roads {
+  width: 255px;
+  height: 253px;
+}
+/*----------Область 7------------*/
+.obl7 {
+  position: relative;
+  bottom: 1562px;
+  left: 764px;
+}
+.forest {
+  width: 255px;
+  height: 253px;
+}
+/*----------Область 8------------*/
+.obl8 {
+  width: 255px;
+  height: 253px;
+  position: relative;
+  bottom: 1582px;
+  left: 764px;
+}
+.Pname1 {
+  color: #ffffff;
+  position: relative;
+  right: 100px;
+  z-index: 2;
+  position: relative;
+  bottom: 145px;
+  left: 43px;
+}
+/*----------------ФОРМА---------------------*/
+.analysis {
+  display: grid;
+  grid-template: 81px 87px / repeat(8, 1fr);
+  grid-template-areas: "information6";
+  grid-gap: 20px;
+  background-color: #0099cc;
+  width: 100%;
+}
+.information6 {
+  grid-area: 2/ 3 / 3 / 7;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.menu3 {
+  display: grid;
+  grid-template: 90px / repeat(8, 1fr);
+  grid-template-areas: "go" "menu2";
+  grid-gap: 20px;
+  background-color: #0099cc;
+  width: 100%;
+}
+.Free {
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  bottom: 10px;
+}
+.belows {
+  font-family: Helvetica;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: 35px;
+}
+/*-------------Круг со стрелкой---------------*/
+/*------------Стрелка------------*/
+.arrow {
+  position: relative;
+  left: 23px;
+  top: 63px;
+}
+.arrow::before {
+  content: "";
+  display: block;
+  border: 3px solid white;
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: translateY(-25%) rotate(135deg);
+}
+.arrow--right::before {
+  right: 10px;
+  border-left: 1px;
+  border-bottom: 1px;
+}
+/*-------------Круг---------------*/
+.circle {
+  width: 64px;
+  height: 64px;
+  border: 3px solid white;
+  border-radius: 50px;
+  position: relative;
+}
+
+/*---------------------------------*/
+/*-----------------Форма для ввода данных-----------------*/
+/*------------------------АНИМАЦИЯ--------------------------------*/
+.menu2,
+#go {
+  display: none;
+}
+#go:checked ~ .menu2 {
+  display: block;
+  z-index: 2;
+}
+.circle:hover {
+  box-shadow: 1px 1px 20px #cccccc;
+}
+
+/*-------------------------------*/
+.go {
+  grid-area: 1/ 4 / 2 / 6;
+  align-self: center;
+  justify-self: center;
+}
+.menu2 {
+  grid-area: 2/ 1/ 3/ 9;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  grid-gap: 20px;
+  background-color: #0099cc;
+  width: 100%;
+  height: 590px;
+}
+.cosial {
+  width: 100%;
+  margin: 0 auto;
+}
+.back-form {
+}
+.close-from {
+}
+.experts {
+  font-family: Helvetica;
+  color: #999999;
+  font-size: 15px;
+  position: relative;
+  bottom: 420px;
+}
+/*Поля для ввода данных*/
+input:focus {
+  outline: none;
+}
+.Forma {
+  position: relative;
+  bottom: 400px;
+  z-index: 5;
+}
+.Forma input:focus {
+  outline: none;
+  border: 2px solid #0099cc;
+  box-shadow: 2px 2px 10px #0099cc;
+}
+.First-name {
+  font-family: Helvetica;
+  width: 430px;
+  height: 52px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #cccccc;
+  padding-left: 30px;
+}
+.Number {
+  font-family: Helvetica;
+  width: 430px;
+  height: 52px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #cccccc;
+  padding-left: 30px;
+  position: relative;
+  top: 20px;
+}
+.Comp-Name {
+  font-family: Helvetica;
+  width: 430px;
+  height: 52px;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #cccccc;
+  padding-left: 30px;
+  position: relative;
+  top: 40px;
+}
+.Bottom3 {
+  font-family: Helvetica;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #e51616;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  width: 161px;
+  height: 46px;
+  position: relative;
+  top: 60px;
+}
+.Bottom3:hover {
+  box-shadow: 1px 1px 20px #0099cc;
+}
+/*------------------------------*/
+.touch {
+  display: grid;
+  grid-template: 71px 51px 80px 51px 85px 75px / repeat(8, 1fr);
+  grid-template-areas: "information7" "information8" "cosial" "FORMS";
+  grid-gap: 20px;
+  background-color: #333333;
+}
+.information7 {
+  grid-area: 2/ 4 / 3 / 6;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 29px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cosial {
+  grid-area: 3/ 4 / 4 / 6;
+  align-self: center;
+  justify-self: center;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  right: 7px;
+}
+.cosial img {
+  border: 2px solid #666666;
+  margin-left: 20px;
+}
+.cosial img:hover {
+  border: 2px solid red;
+}
+.information8 {
+  grid-area: 4/ 3 / 5 / 7;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #999999;
+}
+.FORMS {
+  grid-area: 5/ 3 / 6 / 7;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.Email2 {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #999999;
+  border: none;
+  background-color: #666666;
+  width: 660px;
+  height: 54px;
+  position: relative;
+  padding-left: 30px;
+}
+.Buttom3 {
+  font-family: Helvetica;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #333333;
+  border: 2px solid #666666;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  top: 27px;
+}
+.Buttom3:hover {
+  box-shadow: 1px 1px 20px red;
+}
+/*------------------------Подвал--------------------------*/
+.footer {
+  display: grid;
+  grid-template: 68px / repeat(8, 1fr);
+  grid-template-areas: "information9";
+  grid-gap: 20px;
+  background-color: #666666;
+}
+.information9 {
+  grid-area: 1/ 4 / 2 / 6;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  font-family: Helvetica;
+  color: #cccccc;
+  font-size: 14px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .header,.menu,.back-img, .photos, .workzone, .road, .works, .Our-Works,
+  .Button1 {
+    display: none;
+  }
+body{
+  margin: 0;
+  padding: 0;
+}
+  .Logo {
+  grid-area: 1/ 1/ span 2/ span 8;
+  align-self: center;
+  justify-self: center;
+}
+
+.banner{
+  background-color: #f0f2f4;
+  display: grid;
+  grid-template: 160px 102px 114px / repeat(8, 1fr);
+  grid-template-areas: "back-img" "information2" "Button2";
+  grid-gap: 20px;
+}
+
+.information2 {
+  grid-area: 1/ 1/ span 2/ span 8;
+  align-self: center;
+  justify-self: center;
+}
+.information2 p{
+  color: black;
+}
+.Button2{
+  grid-area: 2/ 2/ span 3/ span 6;
+  align-self: center;
+  justify-self: center;
+}
+.consult-free {
+  background-color: #e9b449;
+  width: 230px;
+  height: 50px;
+  border: 1px solid #e9ac31;
+  border-radius: 7px;
+}
+.consult-free a{
+  font-size: 20px;
+  top: 10px;
+}
+.services{
+  display: grid;
+  grid-template: 83px 260px 230px 230px / repeat(8, 1fr);
+  grid-template-areas: "information3" "facebookM" "pages" "ADS";
+}
+.information3{
+  grid-area: 1/ 1/  2/ 9;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 10px;
+}
+.facebookM{
+  grid-area: 2/ 1/ 3/ 9;
+  align-self: center;
+  justify-self: center;
+}
+.pages{
+  grid-area: 3/ 1/ 4/ 9;
+  align-self: center;
+  justify-self: center;
+}
+.ADS{
+  grid-area: 4/ 1/ 5 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.information4{
+  grid-area: 1/ 1/  2/ 9;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  top: 50px;
+}
+.step1{
+  grid-area: 3/ 1/ 4 / 9;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+}
+.steps {
+  left: 97px;
+  bottom: 230px;
+}
+.Here, .Here3{
+  text-align: center;
+  top: 50px;
+  left: 0px;
+}
+.Lorem, .Lorem3{
+  top: 55px;
+  left: 13px;
+}
+.step2{
+  grid-area: 4/ 1/ 5 / 9;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+}
+.steps2, .steps3, .steps4{
+  left: 97px;
+  bottom: 230px;
+}
+.Here2, .Here4{
+  top: 50px;
+  right: 68px;
+}
+.Lorem2, .Lorem4{
+  text-align: left;
+  left: 13px;
+  top: 50px;
+}
+.step3{
+  grid-area: 5/ 1/ 6 / 9;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+}
+.step4{
+  grid-area: 6/ 1/ 7 / 9;
+  align-self: center;
+  justify-self: center;
+  width: 300px;
+}
+.analysis{
+  display: grid;
+  grid-template: 200px / repeat(8, 1fr);
+  grid-template-areas: "information6";
+  grid-gap: 20px;
+}
+.information6{
+  grid-area: 1/ 1/ 2 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.menu3{
+  grid-area: 1/ 1/ 2 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.menu2{
+    grid-area: 2/ 1/ 3/ 9;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    grid-gap: 20px;
+    background-color: #0099cc;
+    width: 100%;
+    height: 590px;
+  }
+.back-form{
+   width: 300px;
+   height: 500px;
+}
+.experts{
+  bottom: 450px;
+}
+.First-name, .Number, .Comp-Name {
+  width: 230px;
+}
+.information7{
+  grid-area: 2/ 1/ 3 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.cosial{
+  grid-area: 3/ 1/ 4 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.information8{
+  grid-area: 4/ 1/ 5 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.FORMS{
+  grid-area: 5/ 1/ 6 / 9;
+  align-self: center;
+  justify-self: center;
+}
+.Email2{
+  width: 270px;
+}
+.information9{
+  grid-area: 1/ 1/ 2 / 9;
+  align-self: center;
+  justify-self: center;
+}
+}
