@@ -354,13 +354,14 @@ body {
 }
 /*--------------STEP1(Текст в блоке)---------------*/
 .Here {
+  text-align: center;
   font-family: Helvetica;
   font-weight: bold;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
   position: relative;
-  left: 438px;
+  left: 10px;
   bottom: 180px;
 }
 .Lorem {
@@ -438,13 +439,14 @@ body {
 }
 /*-------------STEP3(Текст в блоке)------------*/
 .Here3 {
+  text-align: center;
   font-family: Helvetica;
   font-weight: bold;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
   position: relative;
-  left: 438px;
+  left: 10px;
   bottom: 185px;
 }
 .Lorem3 {
