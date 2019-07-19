@@ -1,3 +1,8 @@
+
+* {
+  /* Делает падинги отступами внутрь родительского элемента */
+  box-sizing: border-box;
+  }
 body {
   background-color: #f0f2f4;
   margin: 0;
@@ -9,11 +14,7 @@ body {
   grid-template-areas: "Logo" "header" "MENU" "Logo"  "banner" "analysis" "footer";
   grid-gap: 20px; 
 }*/
-html {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
+
 
 /* Вверхняя информация */
 .header {
@@ -966,7 +967,10 @@ input:focus {
   .Button1 {
     display: none;
   }
-
+body{
+  margin: 0;
+  padding: 0;
+}
   .Logo {
   grid-area: 1/ 1/ span 2/ span 8;
   align-self: center;
@@ -1052,8 +1056,9 @@ input:focus {
   bottom: 230px;
 }
 .Here, .Here3{
+  text-align: center;
   top: 50px;
-  left: 50px;
+  left: 0px;
 }
 .Lorem, .Lorem3{
   top: 55px;
