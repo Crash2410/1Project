@@ -1,8 +1,4 @@
 
-* {
-  /* Делает падинги отступами внутрь родительского элемента */
-  box-sizing: border-box;
-  }
 body {
   background-color: #f0f2f4;
   margin: 0;
@@ -1075,8 +1071,9 @@ body{
   bottom: 230px;
 }
 .Here2, .Here4{
+  text-align: center;
   top: 50px;
-  right: 68px;
+  right: 0px;
 }
 .Lorem2, .Lorem4{
   text-align: left;
