@@ -370,6 +370,7 @@ body {
   position: relative;
   left: 438px;
   bottom: 185px;
+  width: 60%;
 }
 /*------------STEP2(Блок и картинка)--------------*/
 .step2 {
@@ -455,6 +456,7 @@ body {
   position: relative;
   left: 438px;
   bottom: 190px;
+  width: 60%;
 }
 /*---------------STEP3(Красная)---------------*/
 .steps3 {
@@ -486,6 +488,7 @@ body {
   box-shadow: 5px 5px 15px #cccccc;
 }
 .works {
+  
   height: 240px;
   width: 350px;
   position: relative;
@@ -566,12 +569,23 @@ body {
   align-self: center;
   justify-self: center;
   height: 506px;
-  width: 1024px;
+  width: 1020px;
 }
-/*----------Область 1------------*/
-.obl1 {
+.Works img {
   width: 255px;
   height: 253px;
+}
+/* Картинки */
+.obl1, .obl2, .obl3, .obl4, .obl5, .obl6, .obl7, .obl8 {
+  float: left;
+  width: 255px;
+  height: 253px;
+  position: relative;
+  bottom: 16px;
+}
+.obl5, .obl4 {
+  position: relative;
+  top: 0px;
 }
 .Pname1 {
   color: #ffffff;
@@ -594,38 +608,6 @@ body {
   position: relative;
   left: 6px;
 }
-/*----------Область 2------------*/
-.obl2 .bord {
-  width: 255px;
-  height: 253px;
-}
-/*----------Область 3------------*/
-.obl3 {
-  position: relative;
-  left: 255px;
-  bottom: 510px;
-}
-.photos2 {
-  width: 255px;
-  height: 253px;
-}
-/*----------Область 4------------*/
-.obl4 {
-  width: 255px;
-  height: 253px;
-  position: relative;
-  left: 255px;
-  bottom: 530px;
-}
-.Pname1 {
-  color: #ffffff;
-  position: relative;
-  right: 100px;
-  z-index: 2;
-  position: relative;
-  bottom: 145px;
-  left: 43px;
-}
 .Pname1 .Fmark2 {
   font-family: Helvetica;
   font-size: 16px;
@@ -633,60 +615,8 @@ body {
   position: relative;
   left: 35px;
 }
-/*----------Область 5------------*/
-.obl5 {
-  width: 255px;
-  height: 253px;
-  position: relative;
-  bottom: 1052px;
-  left: 510px;
-}
-.Pname1 {
-  color: #ffffff;
-  position: relative;
-  right: 100px;
-  z-index: 2;
-  position: relative;
-  bottom: 145px;
-  left: 43px;
-}
-/*----------Область 6------------*/
-.obl6 {
-  position: relative;
-  bottom: 1052px;
-  left: 510px;
-}
-.roads {
-  width: 255px;
-  height: 253px;
-}
-/*----------Область 7------------*/
-.obl7 {
-  position: relative;
-  bottom: 1562px;
-  left: 764px;
-}
-.forest {
-  width: 255px;
-  height: 253px;
-}
-/*----------Область 8------------*/
-.obl8 {
-  width: 255px;
-  height: 253px;
-  position: relative;
-  bottom: 1582px;
-  left: 764px;
-}
-.Pname1 {
-  color: #ffffff;
-  position: relative;
-  right: 100px;
-  z-index: 2;
-  position: relative;
-  bottom: 145px;
-  left: 43px;
-}
+
+
 /*----------------ФОРМА---------------------*/
 .analysis {
   display: grid;
@@ -1122,6 +1052,7 @@ input:focus {
   left: 0px;
 }
 .Lorem, .Lorem3{
+  width: 100%;
   top: 55px;
   left: 13px;
 }
@@ -1421,25 +1352,19 @@ input:focus {
 .Works{
   grid-area: 3 / 1/ 5 / 9;
   position: relative;
- 
   text-align: center;
-  height: 430;
   width: 90%;
   max-width: 430px;
+  position: relative;
 }
 .Works img{
   width: 215px;
   height: 213px;
 }
-.obl3{
-  position: relative;
-  left: -107px;
-  bottom: 16px;
-}
-.obl4{
-  position: relative;
-  left: -20px;
-  bottom: 36px;
+.obl3, .obl4, .obl5, .obl6{
+  float: left;
+  width: 215px;
+  height: 213px;
 }
 .Pname1{
   text-align: center;
@@ -1451,25 +1376,12 @@ input:focus {
  position: relative;
  left: 0px;
 }
-.obl5{
-  text-align: right;
-  width: 100%;
-  height: 220px;
-  left: 0px;
-  bottom: 518px;
-}
 .obl5 .Pname1{
   text-align: right;
   left: -20px;
 }
 .obl5 .Fmark2{
   left: -32px;
-}
-.obl6{
-  text-align: right;
-  position: relative;
-  left: 0px;
-  bottom: 542px;
 }
 .analysis{
   display: grid;
