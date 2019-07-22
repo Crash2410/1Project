@@ -663,8 +663,8 @@ body {
 /*------------Стрелка------------*/
 .arrow {
   position: relative;
-  left: 23px;
-  top: 63px;
+  left: 20px;
+  top: 20px;
 }
 .arrow::before {
   content: "";
@@ -723,11 +723,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-.back-form {
-  
-}
-.close-from {
-}
+
 .experts {
   width: 55%;
   margin: 0 auto;
