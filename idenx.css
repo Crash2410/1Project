@@ -3,6 +3,7 @@ body {
   background-color: #f0f2f4;
   margin: 0;
   padding: 0;
+ 
 }
 
 .MENU-Phone, .experts-phone {
@@ -12,6 +13,8 @@ body {
 
 /* Вверхняя информация */
 .header {
+  max-width: 1500px;
+  margin: 0 auto;
   display: grid;
   grid-template: 50px / repeat(8, 1fr);
   grid-template-areas: "infomation";
@@ -63,8 +66,11 @@ body {
   grid-gap: 20px;
   background-color: #ffffff;
   height: 130px;
+  margin: 0 auto;
 }
-
+.anims:checked ~ #approach{
+  transition-duration: 23ms;
+}
 .Logo {
   grid-area: 1 / 2/ 2 / 4;
   z-index: 2;
@@ -103,7 +109,7 @@ body {
 }
 .consult {
   background-color: red;
-  border: 1px solid red;
+ 
   border-radius: 5px;
   width: 171px;
   height: 35px;
@@ -128,6 +134,7 @@ body {
   grid-template: 160px 102px 114px 152px / repeat(8, 1fr);
   grid-template-areas: "back-img" "information2" "Button2";
   grid-gap: 20px;
+  margin: 0 auto;
 }
 .back-img {
   grid-area: 1/ 1/ 5 / 9;
@@ -200,7 +207,6 @@ body {
   width: 50px;
   height: 5px;
   border: none;
-  color: #333;
   background-color: #333;
   position: relative;
   bottom: 25px;
@@ -234,7 +240,7 @@ body {
 }
 .opisan {
   font-family: "Open Sans", sans-serif;
-  font-size: 13, 5px;
+  font-size: 14px;
 }
 /*-----------Создание лендингов--------*/
 .pages {
@@ -252,7 +258,7 @@ body {
 }
 .opisan2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 13, 5px;
+  font-size: 14px;
   position: relative;
   text-align: center;
 }
@@ -264,7 +270,7 @@ body {
 }
 .opisan3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 13, 5px;
+  font-size: 14px;
   position: relative;
 }
 .ADS {
@@ -302,7 +308,6 @@ body {
   width: 50px;
   height: 5px;
   border: none;
-  color: #333;
   background-color: #333;
   position: relative;
   bottom: 25px;
@@ -559,7 +564,6 @@ body {
   width: 50px;
   height: 5px;
   border: none;
-  color: #ffffff;
   background-color: #ffffff;
   position: relative;
   bottom: 30px;
@@ -681,7 +685,7 @@ body {
   height: 64px;
   border: 3px solid white;
   border-radius: 50px;
-  position: relative;
+  position: inherit;
 }
 
 /*---------------------------------*/
@@ -720,11 +724,12 @@ body {
   margin: 0 auto;
 }
 .back-form {
+  
 }
 .close-from {
 }
 .experts {
-  width: 35%;
+  width: 55%;
   margin: 0 auto;
   font-family: Helvetica;
   color: #999999;
@@ -816,7 +821,7 @@ input:focus {
   color: #ffffff;
 }
 .cosial {
-  grid-area: 3/ 4 / 4 / 6;
+  grid-area: 3/ 3 / 4 / 7;
   align-self: center;
   justify-self: center;
   display: inline-block;
@@ -1468,6 +1473,73 @@ input:focus {
 .MENU{
   display: none;
 }
+/* Гамбургер */  
+.MENU-Phone{
+  grid-area: 1/ 1/ 2/  9;
+  display: inherit;
+  z-index: 3;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+/* Стили кнопки */
+.menu__btn {
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+}
+/* Сам гамбургер */
+.menu__btn  span,
+.menu__btn  span::before,
+.menu__btn  span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* Блок меню */
+.menu__box {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  bottom: 160px;
+  left: -100%;
+  width: 100%;
+  height: 180px;
+  padding: 80px 0;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+/* Элементы меню */
+.menu__item {
+  display: block;
+  padding: 10px 24px;
+  color: #333333;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+/* Гамбургер конец */  
 .services{
   display: grid;
   grid-template: 83px 113px 270px 270px/ repeat(8, 1fr);
@@ -1565,7 +1637,48 @@ input:focus {
   justify-self: center;
   text-align: center;
 }
+
 .cosial{
   grid-area: 3/ 3 / 4 / 7;
 }
+}
+@media only screen and (min-device-width : 769px) and (max-device-width : 900px) {
+  .back-form{
+    width: 80%;
+    height: 500px;
   }
+  .experts{
+   width: 70%;
+   margin: 0 auto;
+   text-align: center;
+   font-family: Helvetica;
+   color: #999999;
+   font-size: 15px;
+   position: relative;
+   bottom: 450px;
+  }
+  .First-name, .Number, .Comp-Name {
+   width: 60%;
+   
+  }
+}
+@media only screen and (min-device-width : 1300px) and (max-device-width : 1920px) {
+  .back-form{
+    width: 50%;
+    height: 500px;
+  }
+  .experts{
+   width: 40%;
+   margin: 0 auto;
+   text-align: center;
+   font-family: Helvetica;
+   color: #999999;
+   font-size: 15px;
+   position: relative;
+   bottom: 450px;
+  }
+  .First-name, .Number, .Comp-Name {
+   width: 40%;
+   
+  }
+}
