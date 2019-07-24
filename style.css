@@ -95,6 +95,7 @@ body {
 }
 .menu li :hover {
   color: red;
+  transition: 0.8s;
 }
 
 .alips {
@@ -106,10 +107,10 @@ body {
   justify-self: end;
   align-self: center;
   text-align: center;
+  
 }
 .consult {
   background-color: red;
- 
   border-radius: 5px;
   width: 171px;
   height: 35px;
@@ -123,8 +124,9 @@ body {
   position: relative;
   top: 7px;
 }
-.consult :hover {
-  box-shadow: 1px 1px 10px #e51616;
+.Button1 :hover {
+  box-shadow: 2px 2px 15px #e51616;
+  transition: 0.8s ease;
 }
 
 /* Баннер */
@@ -187,6 +189,7 @@ body {
 }
 .consult-free:hover {
   box-shadow: 1px 1px 10px #ecb952;
+  transition: 0.8s;
 }
 /* Наши сервисы */
 .services {
@@ -687,7 +690,10 @@ body {
   border-radius: 50px;
   position: inherit;
 }
-
+.circle:hover {
+  box-shadow: 1px 1px 20px #cccccc;
+  transition: 0.8s;
+}
 /*---------------------------------*/
 /*-----------------Форма для ввода данных-----------------*/
 /*------------------------АНИМАЦИЯ--------------------------------*/
@@ -699,9 +705,7 @@ body {
   display: block;
   z-index: 2;
 }
-.circle:hover {
-  box-shadow: 1px 1px 20px #cccccc;
-}
+
 
 /*-------------------------------*/
 .go {
@@ -746,6 +750,7 @@ input:focus {
   outline: none;
   border: 2px solid #0099cc;
   box-shadow: 2px 2px 10px #0099cc;
+  transition: 0.8s;
 }
 .First-name {
   font-family: Helvetica;
@@ -797,6 +802,7 @@ input:focus {
 }
 .Bottom3:hover {
   box-shadow: 1px 1px 20px #0099cc;
+  transition: 0.8s;
 }
 /*------------------------------*/
 .touch {
@@ -831,6 +837,7 @@ input:focus {
 }
 .cosial img:hover {
   border: 2px solid red;
+  transition: 0.8s;
 }
 .information8 {
   grid-area: 4/ 3 / 5 / 7;
@@ -872,6 +879,12 @@ input:focus {
 }
 .Buttom3:hover {
   box-shadow: 1px 1px 20px red;
+  transition: 0.8s;
+}
+.Email2:focus {
+  
+  box-shadow: 1px 1px 15px red;
+  transition: 0.8s;
 }
 /*------------------------Подвал--------------------------*/
 .footer {
@@ -1534,6 +1547,10 @@ input:focus {
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
+}
+.menu__item:hover{
+  color: gray;
+  transition: 0.8s;
 }
 /* Гамбургер конец */  
 .services{
